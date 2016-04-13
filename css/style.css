@@ -1,0 +1,116 @@
+/* browswers default*/
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  font: 1em/1.25, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+p, th, td,
+li, dd, dt,
+ul, ol, blockquote,
+q, acronym, abbr, a,
+input, select, textarea {
+  margin: 0;
+  padding: 0;
+  font: normal normal normal 1em/1.25 Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 0px;
+}
+
+/*My own CSS*/
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: block;
+  overflow-x: hidden;
+  text-align: left;
+  font-family: "Noto Sans", "Lato", Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 500px;
+}
+
+
+.top {
+  background: rgb(240,240,240);
+  height: 600px;
+  text-align: center;
+  position: relative;
+}
+
+
+.top > h2 {
+    font-size: 30px;
+    padding: 15px 0 10px 0;
+  }
+
+
+.about-me {
+  z-index: 100;
+  position: relative;
+}
+
+
+.about-me::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 150%;
+  height: 225px;
+  transform-origin: left bottom;
+  webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-color: rgb(255, 255, 255);
+  z-index: -100;
+}
+
+.about-me-text{
+  z-index: 150;
+  margin-top: -100px;
+  height: 70%;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+}
+
+.about-me-text > h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: -110px;
+}
+
+.about-me-text > h2 {
+  font-size: 25px;
+  text-align: left;
+  margin-top: 110px;
+}
+
+
+
+.projects::before {
+  display: block;
+  webkit-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+  -ms-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+  transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+  background-color: rgb(255, 255, 255);
+  width: 150%;
+  height: 225px;
+
+}
+
+
