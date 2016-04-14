@@ -1,5 +1,5 @@
 /* browswers default*/
-
+/*https://coolors.co/app/feffff-98dafc-daad86-312c32-e8edf3*/
 html, body {
   margin: 0px;
   padding: 0px;
@@ -36,17 +36,18 @@ div {
 
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #E8EDF3;
   display: block;
   overflow-x: hidden;
   text-align: center;
+  color: #312C32;
   font-family: "Lato", "Noto Sans", Helvetica, Arial, sans-serif;
 }
 
 
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -54,7 +55,7 @@ h2 {
   font-size: 30px
 }
 
-h3 {
+h3, h4 {
   font-size: 22px;
   font-family: "Merriweather", "Lato", Helvetica, Arial, sans-serif;
 }
@@ -72,6 +73,18 @@ small {
   margin: 20px;
 }
 
+ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 3px 10px;
+  color: rgb(26, 153, 170);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .project-img {
   width: 500px;
@@ -80,7 +93,7 @@ small {
 
 .top {
   background: rgb(240,240,240);
-  height: 600px;
+  height: 800px;
   position: relative;
 }
 
@@ -91,12 +104,13 @@ small {
 
 
 .about-me {
+  height: 600px;
   z-index: 100;
   position: relative;
 }
 
 
-.about-me::before {
+/*.about-me::before {
   position: absolute;
   content: "";
   display: block;
@@ -108,19 +122,18 @@ small {
   transform: rotate(-5deg);
   background-color: rgb(255, 255, 255);
   z-index: -100;
-}
+}*/
 
 .about-me-text{
   z-index: 150;
   margin-top: -100px;
   height: 70%;
-  background-color: rgb(255, 255, 255);
+  background-color: #FEFFFF;
   padding: 5%;
 }
 
 .about-me-text > h1 {
-  font-size: 60px;
-  margin-top: -110px;
+  margin-top: 0px;
 }
 
 .about-me-text > h3 {
@@ -128,67 +141,72 @@ small {
   margin-top: 110px;
 }
 
-.about-me::after {
+/*.about-me::after {
   position: absolute;
   content: "";
   display: block;
   width: 120%;
-  height: 225px;
+  height: 100px;
   transform-origin: right top;
-  webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  transform: rotate(5deg);
+  webkit-transform: rotate(5deg)translateX(-20%)translateY(40%);
+  -ms-transform: rotate(5deg)translateX(-20%)translateY(40%);
+  transform: rotate(5deg)translateX(-20%)translateY(40%);
   background-color: rgb(255,255,255);
-  z-index: -100;
-}
+}*/
 
 
-.projects::before {
-  display: absolute;
+/*.projects::before {
+  position: absolute;
   content: "";
   display: block;
-  webkit-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
-  -ms-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
-  transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+  webkit-transform: rotate(5deg)translateX(-20%)translateY(-20%);
+  -ms-transform: rotate(5deg)translateX(-20%)translateY(-20%);
+  transform: rotate(5deg)translateX(-20%)translateY(-20%);
   background-color: rgb(255,255,255);
   width: 150%;
-  height: 225px;
-}
+  height: 150px;
+  z-index: 200;
+}*/
 
 
 
 .projects {
   display: relative;
   text-align: center;
-  background-color: rgb(240,240,240);
+  z-index: 200;
 }
 
 .projects > h1 {
-  font-size: 60px;
+  padding-top: 50px;
+  z-index: 200;
+  position: relative;
 }
-
 
 
 .project-col {
   padding: 100px 50px;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+
 .odd {
+  position: relative;
   flex-wrap: wrap-reverse;
-  background-color: rgb(240,240,240);
 }
 
+
 .even {
+  background-color: #FEFFFF;
   flex-wrap: wrap;
-  background-color: rgb(255,255,255);
+  z-index: 200;
 }
 
 
 .project-col > div {
-  max-width: 500px;
+  max-width: 450px;
   min-width: 250px
 }
 
@@ -217,11 +235,6 @@ small {
   margin: 20px 0 30px 0;
 }
 
-.description > span {
-  color: dodgerblue;
-  margin: 20px;
-}
-
 .victor-logo {
   background-color: #4e93cf;
 }
@@ -242,19 +255,35 @@ small {
   background: linear-gradient(to right, #63daf6 , #d26c6c); /* Standard syntax */
 }
 
+section.contact {
+  position: relative;
+  padding: auto;
+  min-height: 700px;
+  background: rgb(240,240,240)
+}
+
 
 .contact > h1 {
-  margin: 30px;
+  padding-top: 200px;
+}
+
+.contact > a > h3 {
+  padding: 20px;
+
 }
 
 .contact > h4 {
   margin: 15px;
+  padding: 10px;
 }
+
+
 
 
 footer {
   display: inline-flex;
 }
+
 
 @media only screen
   and (min-device-width: 320px)
