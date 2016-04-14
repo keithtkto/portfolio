@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
   <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
   <title>Keith</title>
@@ -20,94 +22,110 @@
   <section class="about-me">
 
     <div class="about-me-text">
-      <h1>Hello</h1>
-      <h2>Hello, I am Keith, <br> Full-Stack Web Developer based in Los Angeles, California. <br>
-          I aspire to design and build simple elegrant and user friendly web sites and applications.
+      <h1>Greeting!</h1>
+      <h2>Hello, I am Keith.<br> Full-Stack Web Developer based in Los Angeles, California. <br>
+          I aspire to design and build user friendly, simple and elegant web applications.
       </h2>
-      <p></p>
     </div>
   </section>
 
   <section class="projects">
     <h1>Portfolio</h1>
-    <span>Victor</span>
-    <span>Propel!</span>
-    <span>Pacis</span>
-    <span>NOC_List//Codenames</span>
+    <a href="#victor"><span>Victor</span></a>
+    <a href="#propel"><span>Propel!</span></a>
+    <a href="#pacis"><span>Pacis</span></a>
+    <a href="#noclist"><span>NOC_List//Codenames</span></a>
 
-    <div>
-      <img class="project-img" src="/assets/victor_on_mac.png" alt="my app Victor on a macbook">
-      <div>
+    <div class="project-col odd" name="victor" id="victor">
+      <div class="description">
         <h3>
-          <img class="logo-h3 victor-logo" src="/assets/victor_logo.png" alt="logo of my app Victor">
+          <a href="https://floating-beach-57759.herokuapp.com/"><img class="logo-h3 victor-logo" src="/assets/victor_logo.png" alt="logo of my app Victor"></a>
         </h3>
         <p>
-
+          Victor is your virtual pill box and your medical regimen companion.
+          With the data collected from Victor, we hope to help medical providers better serve their patients.
         </p>
         <span>
-
+          HTML - SASS/CSS - Javascript - Mongoose - Express - Angular - Node - MongoDB - Cron - Gulp
         </span>
+        <br>
+        <small>
+          Mobile app version in working progress
+        </small>
       </div>
-
-    </div>
-    <div>
-      <img class="project-img" src="/assets/pacis_on_mac.png" alt="my app Propel! on a macbook">
-
       <div>
-        <h3>
-          <img class="logo-h3 propel-logo" src="/assets/propel_logo.png" alt="logo of my app Propel">
-        </h3>
-        <p>
-
-        </p>
-        <span>
-
-        </span>
+        <a href="https://floating-beach-57759.herokuapp.com/"><img class="project-img" src="/assets/victor_on_mac_iphone.png" alt="my app Victor on a macbook"></a>
       </div>
     </div>
-    <div>
-      <img class="project-img" src="/assets/pacis_on_mac.png" alt="my app Pacis on a macbook">
 
+    <div class="project-col even" name="propel" id="propel">
       <div>
+        <a href=""><img class="project-img" src="/assets/blank_mac.png" alt="my app Propel! on a macbook"></a>
+      </div>
+
+      <div class="description">
         <h3>
-          <img class="logo-h3 pacis-logo" src="/assets/pacis_logo.png" alt="logo of my app Pacis">
+          <a href=""><img class="logo-h3 propel-logo" src="/assets/propel_logo.png" alt="logo of my app Propel"></a>
         </h3>
         <p>
-
+          Propel! is a Question & Answer applicaiton built for the modern classroom. Students and Instructors alike can gain a better learning experience with Pro
         </p>
         <span>
-
+          HTML - CSS - Javascript - JQuery - Mongoose - Express - Ajax - Node - Socket.io -
+          MongoDB - Scrum
         </span>
       </div>
     </div>
-    <div>
-      <img class="project-img" src="/assets/noclist_on_mac_iphone.png" alt="my web game NOCLIST//CODENAME on a macbook and iphone6">
-      <div>
+
+    <div class="project-col odd" name="pacis" id="pacis">
+      <div class="description">
         <h3>
-          <img class="logo-h3 noclist-logo" src="/assets/noclist_logo.png" alt="logo of my app NOCLIST">
+          <a href="http://pacific-taiga-52255.herokuapp.com/"><img class="logo-h3 pacis-logo" src="/assets/pacis_logo.png" alt="logo of my app Pacis"></a>
         </h3>
         <p>
-
+          Pacis is a time-stamp and payroll application designed for small bussiness owner. Employers can enroll their employee remotely from the web.
+          Employees can clock in & out anywhere with an accurate GPS location each time.
         </p>
         <span>
+          HTML - CSS - Javascript - Ruby on Rails - PostgresSQL
+        </span>
+      </div>
+      <div>
+        <a href="http://pacific-taiga-52255.herokuapp.com/"><img class="project-img" src="/assets/pacis_on_mac.png" alt="my app Pacis on a macbook"></a>
+      </div>
+    </div>
 
+    <div class="project-col even" name="noclist" id="noclist">
+      <div>
+        <a href="http://keithtkto.github.io/wdi_project1_game_noc_list/"><img class="project-img" src="/assets/noclist_on_mac_iphone.png" alt="my web game NOCLIST//CODENAME on a macbook and iphone6"></a>
+      </div>
+
+      <div class="description">
+        <h3>
+          <a href="http://keithtkto.github.io/wdi_project1_game_noc_list/"><img class="logo-h3 noclist-logo" src="/assets/noclist_logo.png" alt="logo of my app NOCLIST"></a>
+        </h3>
+        <p>
+          NOC LIST is a web version of my favorite party game Codenames designed by Vlaada Chv&aacutetil.
+          This web browser game is designed to be playable on your smartphones and tablet.
+        </p>
+        <span>
+          HTML - CSS - Javascript
         </span>
       </div>
     </div>
   </section>
 
-<section>
-  <h2>Contact</h2>
-  <h4>Need a hand on developing website? or just want to say Hi? <br> type me a email!</h4>
-  <span>keithtkto@gmail.com</span>
-  <h5>You can also learn more about me here:</h5>
-  <footer>
-  <span>
-      <img class="logos" src="/assets/github2.png" alt="github logo">
-
-      <img class="logos" src="/assets/linkedin.png" alt="linkedin logo">
-  </span>
-  </footer>
-</section>
+  <section>
+    <h2>Contact</h2>
+    <h4>Need a hand on your next website? or just want to say hi? <br> Send me a email!</h4>
+    <span>keithtkto@gmail.com</span>
+    <h5>You can also learn more about me here:</h5>
+    <footer>
+      <span>
+          <a href="https://github.com/keithtkto/"><img class="logos" src="/assets/github2.png" alt="github logo"></a>
+          <a href="https://www.linkedin.com/in/keithtkto"><img class="logos" src="/assets/linkedin.png" alt="linkedin logo"></a>
+      </span>
+    </footer>
+  </section>
 </body>
 </html>
