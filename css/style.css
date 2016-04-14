@@ -40,11 +40,14 @@ body {
   display: block;
   overflow-x: hidden;
   text-align: center;
-  font-family: "Noto Sans", "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Noto Sans", Helvetica, Arial, sans-serif;
 }
+
+
 
 h1 {
   font-size: 50px;
+  font-weight: bold;
 }
 
 h2 {
@@ -53,6 +56,20 @@ h2 {
 
 h3 {
   font-size: 22px;
+  font-family: "Merriweather", "Lato", Helvetica, Arial, sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p, span, small {
+  font-family: "Merriweather", "Lato", Helvetica, Arial, sans-serif;
+}
+
+small {
+  display: block;
+  margin: 20px;
 }
 
 
@@ -150,8 +167,10 @@ h3 {
   font-size: 60px;
 }
 
+
+
 .project-col {
-  margin: 50px auto;
+  padding: 100px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -161,8 +180,6 @@ h3 {
   flex-wrap: wrap-reverse;
   background-color: rgb(240,240,240);
 }
-
-
 
 .even {
   flex-wrap: wrap;
@@ -175,6 +192,9 @@ h3 {
   min-width: 250px
 }
 
+.anchor-logo * {
+  margin: 10px;
+}
 
 
 
@@ -185,6 +205,7 @@ h3 {
 }
 
 .logo-h3 {
+  margin-top: 30px;
   padding: 3px 5px;
   width: 190px;
   height: 60px;
@@ -193,7 +214,12 @@ h3 {
 }
 
 .description > p {
-  margin: 5px 0 10px 0;
+  margin: 20px 0 30px 0;
+}
+
+.description > span {
+  color: dodgerblue;
+  margin: 20px;
 }
 
 .victor-logo {
@@ -201,11 +227,11 @@ h3 {
 }
 
 .propel-logo {
-  background-color: Dodgerblue;
+  background-color: white;
 }
 
 .pacis-logo {
-  background-color: rgb(237,237,250);
+  background-color: white;
 }
 
 .noclist-logo {
@@ -216,6 +242,14 @@ h3 {
   background: linear-gradient(to right, #63daf6 , #d26c6c); /* Standard syntax */
 }
 
+
+.contact > h1 {
+  margin: 30px;
+}
+
+.contact > h4 {
+  margin: 15px;
+}
 
 
 footer {
