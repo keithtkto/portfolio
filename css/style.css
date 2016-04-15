@@ -36,12 +36,51 @@ div {
 
 
 body {
-  background-color: #E8EDF3;
-  display: block;
+/*  background-color: #E8EDF3;
+*/  display: block;
   overflow-x: hidden;
   text-align: center;
   color: #312C32;
   font-family: "Lato", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: #677077;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    color: rgb(255,255,255);
+}
+
+header > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 8px 0 0 30px;
+  float: left;
+}
+
+header > ul {
+  float: right;
+  padding: 19px 0 0 30px;
+  color: rgb(255,255,255);
+
+}
+
+header > ul > a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+header > ul > a > li {
+  color: rgb(255,255,255);
+  font-size: 20px;
+}
+
+.nav-up {
+    top: -65px;
 }
 
 
@@ -100,7 +139,12 @@ li {
 
 .top > h2 {
     padding: 15px 0 10px 0;
-  }
+}
+
+.me {
+  padding: 300px;
+
+}
 
 
 .about-me {
@@ -139,6 +183,13 @@ li {
 .about-me-text > h3 {
   text-align: left;
   margin-top: 110px;
+}
+
+.about-me-text > p {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    text-align: left;
 }
 
 /*.about-me::after {
@@ -180,6 +231,7 @@ li {
   padding-top: 50px;
   z-index: 200;
   position: relative;
+  background-color: rgb(240,240,240);
 }
 
 
@@ -195,6 +247,7 @@ li {
 .odd {
   position: relative;
   flex-wrap: wrap-reverse;
+  background-color: rgb(240,240,240);
 }
 
 

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
@@ -13,10 +15,17 @@
 <body>
 
 
+  <header>
+    <h2> Keith To </h2>
+    <ul>
+      <a href="#top"><li>HOME</li></a>
+      <a href="#projects"><li>PROJECTS</li></a>
+      <a href="#contact"><li>CONTACT</li></a>
+    </ul>
+  </header>
+  <section class="top" name="top" id="top">
 
-  <section class="top">
-
-    <h1> - K E I T H + T K T O -</h1>
+    <h1 class="me"> - K E I T H + T O -</h1>
 <!--     <div class="anchor-logo">
       <a href="#noclist"><span><img class="logo-h3 noclist-logo" src="/assets/noclist_logo.png" alt="logo of my app NOCLIST"></span></a>
       <a href="#pacis"><span><img class="logo-h3 pacis-logo" src="/assets/pacis_logo.png" alt="logo of my app Pacis"></span></a>
@@ -29,14 +38,14 @@
 
     <div class="about-me-text">
       <h1>GREETINGS</h1>
-      <h3>Hello, I am Keith.<br> Full-Stack Web Developer based in Los Angeles, California. <br>
+      <h3>Hello, I am Keith.<br>Web Developer based in Los Angeles, California. <br>
           I would love to make some websites and web applications for you.
       </h3>
       <p style="color: grey;">I am a full-stack developer with experience in Agile workflow as well as the most relevant web developing tools, such as MEAN stack and Ruby on Rails. Prior to changing my career as a software developer, I was a part of a research team developing new treatment for autism spectrum disorder. My experience as a medical researcher have helped me develop the ability to perform detail-oriented tasks, and immensely refine my critical thinking skills. My background as a scientist has helped me effectively break down and tackle complex programming problems, and produce developable projects. Now, I am seeking career opportunities in a collaborative and innovative work environment where I can continue to grow as a full-stack developer.</p>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" name="projects" id="projects">
     <h1>PROJECTS</h1>
     <div class="project-col odd" name="victor" id="victor">
       <div class="description">
@@ -138,7 +147,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" name="contact" id="contact">
     <h1>CONTACT</h1>
     <h4>Need a hand on your next website? or just want to say hi?</h4>
     <h4>Send me a email!</h4>
