@@ -36,3 +36,34 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+
+//
+
+$(window).scroll(function () {
+    $('.animation-odd').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            if ($(this).hasClass() !== "slideLeft"  ) {}
+            $(this).addClass("slideLeft");
+            $(this).removeClass("hidding-just-now");
+        }
+    });
+
+
+    $('.animation-even').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            if ($(this) )
+            $(this).addClass("slideRight");
+            $(this).removeClass("hidding-just-now");
+        }
+    });
+
+});

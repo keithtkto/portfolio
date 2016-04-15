@@ -36,8 +36,8 @@ div {
 
 
 body {
-/*  background-color: #E8EDF3;
-*/  display: block;
+  background-color: rgb(240,240,240);
+  display: block;
   overflow-x: hidden;
   text-align: center;
   color: #312C32;
@@ -64,9 +64,8 @@ header > h2 {
 
 header > ul {
   float: right;
-  padding: 19px 0 0 30px;
+  padding: 19px 20px 0 0;
   color: rgb(255,255,255);
-
 }
 
 header > ul > a {
@@ -130,19 +129,17 @@ li {
 }
 
 
-.top {
+.home {
   background: rgb(240,240,240);
-  height: 800px;
   position: relative;
 }
 
 
-.top > h2 {
-    padding: 15px 0 10px 0;
+.home > h2 {
 }
 
 .me {
-  padding: 300px;
+  padding: 30% 0;
 
 }
 
@@ -336,7 +333,7 @@ section.contact {
 footer {
   display: inline-flex;
 }
-
+/* for smaller screens*/
 
 @media only screen
   and (min-device-width: 320px)
@@ -360,10 +357,30 @@ footer {
   }
 
 
+  header > h2 {
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 15px 0 0 20px;
+    float: left;
+  }
+
+  header > ul {
+    float: right;
+    padding: 19px 20px 0 0;
+    color: rgb(255,255,255);
+  }
+
+  header > ul > a > li {
+    color: rgb(255,255,255);
+    font-size: 14px;
+  }
+
+  header > ul {
+    float: right;
+    padding: 19px 0 0 0;
+    color: rgb(255,255,255);
+  }
 }
-
-
-
 
 
 

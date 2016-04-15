@@ -9,7 +9,9 @@
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
   <title>Welcome to Keith's Portfolio</title>
+
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/scroll_animation.css">
   <script src="/js/script.js"></script>
 </head>
 <body>
@@ -18,14 +20,13 @@
   <header>
     <h2> Keith To </h2>
     <ul>
-      <a href="#top"><li>HOME</li></a>
+      <a href="#home"><li>HOME</li></a>
       <a href="#projects"><li>PROJECTS</li></a>
       <a href="#contact"><li>CONTACT</li></a>
     </ul>
   </header>
-  <section class="top" name="top" id="top">
-
-    <h1 class="me"> - K E I T H + T O -</h1>
+  <section class="home" name="home" id="home">
+    <h1 class="me pulse"> Making websites for a living <br>- K E I T H + T O -</h1>
 <!--     <div class="anchor-logo">
       <a href="#noclist"><span><img class="logo-h3 noclist-logo" src="/assets/noclist_logo.png" alt="logo of my app NOCLIST"></span></a>
       <a href="#pacis"><span><img class="logo-h3 pacis-logo" src="/assets/pacis_logo.png" alt="logo of my app Pacis"></span></a>
@@ -41,13 +42,13 @@
       <h3>Hello, I am Keith.<br>Web Developer based in Los Angeles, California. <br>
           I would love to make some websites and web applications for you.
       </h3>
-      <p style="color: grey;">I am a full-stack developer with experience in Agile workflow as well as the most relevant web developing tools, such as MEAN stack and Ruby on Rails. Prior to changing my career as a software developer, I was a part of a research team developing new treatment for autism spectrum disorder. My experience as a medical researcher have helped me develop the ability to perform detail-oriented tasks, and immensely refine my critical thinking skills. My background as a scientist has helped me effectively break down and tackle complex programming problems, and produce developable projects. Now, I am seeking career opportunities in a collaborative and innovative work environment where I can continue to grow as a full-stack developer.</p>
-    </div>
+<!--       <p style="color: grey;">I am a full-stack developer with experience in Agile workflow as well as the most relevant web developing tools, such as MEAN stack and Ruby on Rails. Prior to changing my career as a software developer, I was a part of a research team developing new treatment for autism spectrum disorder. My experience as a medical researcher have helped me develop the ability to perform detail-oriented tasks, and immensely refine my critical thinking skills. My background as a scientist has helped me effectively break down and tackle complex programming problems, and produce developable projects. Now, I am seeking career opportunities in a collaborative and innovative work environment where I can continue to grow as a full-stack developer.</p>
+ -->    </div>
   </section>
 
   <section class="projects" name="projects" id="projects">
     <h1>PROJECTS</h1>
-    <div class="project-col odd" name="victor" id="victor">
+    <div class="project-col odd animation-odd hidding-just-now" name="victor" id="victor">
       <div class="description">
         <h3>
           <a href="https://floating-beach-57759.herokuapp.com/"><img class="logo-h3 victor-logo" src="/assets/victor_logo.png" alt="logo of my app Victor"></a>
@@ -76,9 +77,8 @@
       </div>
     </div>
 
-    <div class="divider-one"></div>
 
-    <div class="project-col even" name="propel" id="propel">
+    <div class="project-col even animation-even hidding-just-now" name="propel" id="propel">
       <div>
         <a href=""><img class="project-img" src="/assets/blank_mac.png" alt="my app Propel! on a macbook"></a>
       </div>
@@ -102,7 +102,7 @@
       </div>
     </div>
 
-    <div class="project-col odd" name="pacis" id="pacis">
+    <div class="project-col odd animation-odd hidding-just-now" name="pacis" id="pacis">
       <div class="description">
         <h3>
           <a href="http://pacific-taiga-52255.herokuapp.com/"><img class="logo-h3 pacis-logo" src="/assets/pacis_logo.png" alt="logo of my app Pacis"></a>
@@ -124,7 +124,7 @@
       </div>
     </div>
 
-    <div class="project-col even" name="noclist" id="noclist">
+    <div class="project-col even animation-even hidding-just-now" name="noclist" id="noclist">
       <div>
         <a href="http://keithtkto.github.io/wdi_project1_game_noc_list/"><img class="project-img" src="/assets/noclist_on_mac_iphone.png" alt="my web game NOCLIST//CODENAME on a macbook and iphone6"></a>
       </div>
@@ -151,7 +151,7 @@
     <h1>CONTACT</h1>
     <h4>Need a hand on your next website? or just want to say hi?</h4>
     <h4>Send me a email!</h4>
-    <a href="mailto:keithtkto@gmail.com"><h3>keithtkto@gmail.com</h3></a>
+    <a href="mailto:keithtkto@gmail.com"><h3 class="pulse">keithtkto@gmail.com</h3></a>
     <h4>You can also learn more about me here:</h4>
     <footer>
       <span>
@@ -160,5 +160,8 @@
       </span>
     </footer>
   </section>
+
+
+
 </body>
 </html>
