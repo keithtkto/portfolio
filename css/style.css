@@ -135,7 +135,8 @@ li {
 }
 
 
-.home > h2 {
+.home > h1 {
+  margin: -10%;
 }
 
 .me {
@@ -170,7 +171,7 @@ li {
   margin-top: -100px;
   height: 70%;
   background-color: #FEFFFF;
-  padding: 5%;
+  padding: 5% 10%;
 }
 
 .about-me-text > h1 {
@@ -183,9 +184,8 @@ li {
 }
 
 .about-me-text > p {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
+    color: grey;
+    margin-top: 2%;
     text-align: left;
 }
 
@@ -252,6 +252,10 @@ li {
   background-color: #FEFFFF;
   flex-wrap: wrap;
   z-index: 200;
+}
+
+.even-background {
+  background-color: white;
 }
 
 
