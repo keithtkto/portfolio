@@ -183,7 +183,7 @@ li {
   margin-top: 110px;
 }
 
-.about-me-text > p {
+.about-me-text > h4 {
     color: grey;
     margin-top: 2%;
     text-align: left;
